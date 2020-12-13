@@ -1,3 +1,11 @@
+Maak een map .gitignore aan en zet daar de volgende bestanden en files in
+node_modules
+.eslintrc.json
+package-lock.json
+package.json
+prettierrc
+.gitignore
+
 in je Terminal:
 node -v (om te checken of je node op je systeem hebt staan, zo niet installeer die dan eerst)
 
