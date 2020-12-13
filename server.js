@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 const express = require('express');
 const path = require('path');
 const cookieSession = require('cookie-session');
@@ -17,7 +18,7 @@ app.set('trust proxy', 1);
 app.use(
   cookieSession({
     name: 'session',
-    keys: ['ja8sdfu9a998sydf83', 'gfasfasdfads23r23'],
+    keys: ['ja8sdfu9a998sydf83', 'girafasfasdfads23r23'],
   })
 );
 
