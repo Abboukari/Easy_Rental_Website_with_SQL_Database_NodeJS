@@ -4,10 +4,13 @@ const path = require('path');
 const cookieSession = require('cookie-session');
 
 const Fietsendisplay = require('./services/fietsendisplay');
+const MedewerkerService = require('./services/MedewerkerService');
 
 const fietsendisplay = new Fietsendisplay('./data/fietsdata.json');
+const medewerkerService = new MedewerkerService('./data/medewerkers.json');
 
 const routes = require('./routes');
+
 // const { Session } = require('inspector');
 
 const app = express();
@@ -31,6 +34,7 @@ app.use(
   '/',
   routes({
     fietsendisplay,
+    medewerkerService,
   })
 );
 

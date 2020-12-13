@@ -1,0 +1,92 @@
+{
+  "medewerkers": [
+    {
+      "medwerkernummer": "01",
+      "voornaam": "Strax",
+      "achternaam": "Batchnine",
+      "geboortedatum": "06-08-1893",
+      "login-naam": "forTheGloryOfTheEmpire",
+      "paswoord": "Sontar",
+      "basisrol": "Baliemedewerker"
+    },
+    {
+      "medwerkernummer": "02",
+      "voornaam": "Madame",
+      "achternaam": "Vastra",
+      "geboortedatum": "14-03-1880",
+      "login-naam": "ScotlandYard65",
+      "paswoord": "Silurian",
+      "basisrol": "Directeur"
+    },
+
+    {
+      "medwerkernummer": "03",
+      "voornaam": "Missy",
+      "achternaam": "Oakdown",
+      "geboortedatum": "32-12-1982",
+      "login-naam": "Chantho",
+      "paswoord": "Gallifrey",
+      "basisrol": "Baliemendewerker"
+    },
+
+    {
+      "medwerkernummer": "04",
+      "voornaam": "Melody",
+      "achternaam": "Pond",
+      "geboortedatum": "05-02-5103",
+      "login-naam": "Sweety",
+      "paswoord": "DemonsRun",
+      "basisrol": "Reparateur"
+    },
+
+    {
+      "medwerkernummer": "05",
+      "voornaam": "Jack",
+      "achternaam": "Harkness",
+      "geboortedatum": "16-08-5090",
+      "login-naam": "TheFaceOfBoe",
+      "paswoord": "RiverSong",
+      "basisrol": "Baliemedewerker"
+    },
+
+    {
+      "medwerkernummer": "06",
+      "voornaam": "Bill",
+      "achternaam": "Potts",
+      "geboortedatum": "26-05-1991",
+      "login-naam": "PearltheFirst",
+      "paswoord": "Heather4ever",
+      "basisrol": "Reparateur"
+    },
+
+    {
+      "medwerkernummer": "07",
+      "voornaam": "Donna",
+      "achternaam": "Nobel",
+      "geboortedatum": "12-07-1977",
+      "login-naam": "Bride498",
+      "paswoord": "ShaunTemple",
+      "basisrol": "Helpdeskmedewerker"
+    },
+
+    {
+      "medwerkernummer": "08",
+      "voornaam": "Dalek",
+      "achternaam": "Kaled",
+      "geboortedatum": "04-06-7989",
+      "login-naam": "Skaro468",
+      "paswoord": "DavrosMyLeader",
+      "basisrol": "Filiaalmanager"
+    },
+
+    {
+      "medwerkernummer": "09",
+      "voornaam": "Sarah Jane",
+      "achternaam": "Smith",
+      "geboortedatum": "08-05-1951",
+      "login-naam": "TimeWarrior",
+      "paswoord": "K9Lily",
+      "basisrol": "Reparateur"
+    }
+  ]
+}
