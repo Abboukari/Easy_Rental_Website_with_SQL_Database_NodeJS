@@ -1,0 +1,200 @@
+/* 
+COLOR PALETTE
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+donker groen: #44955c;
+licht groen: #46ad65;
+oranje/rood: #c46952;
+bruin: #c79f54;
+geel: #bec957;
+
+LETTTERTYPE
+font-family: shackleton, serif;
+font-family: acumin-pro-semi-condensed, sans-serif; 
+*/
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  background: #c79f54;
+  font-family: 'acumin-pro-semi-condensed', sans-serif;
+}
+
+/* Top navigatie menu aan de hand van wireframe hieronder AB ---------------------------------------- */
+
+header {
+  background-color: #c79f54;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0%;
+  padding: 0%;
+  overflow: hidden;
+  background-color: #46ad65;
+  border-radius: 20px;
+  max-width: 2000px;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 20px;
+  background-color: #46ad65;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+li a:hover {
+  background-color: #c46952;
+}
+
+.active {
+  background-color: #c46952;
+}
+
+li {
+  border-right: 2px solid #bbbbbb;
+}
+
+input {
+  border-radius: 5px;
+ font-size: medium;
+ font-weight: bold;
+ background-color: black;
+ color: whitesmoke;
+}
+
+/* logo met achtergrond footer Ab--------------------------------------------------------- */
+
+.logo12 {
+  align-content: center;
+  margin-left: -1px;
+  margin: 5px;
+}
+
+.logo12 img {
+  width: 100%;
+  height: auto;
+}
+
+/* ----------------------------Indexpagina---------------- */
+
+.welkomsteksten {
+  text-align: center;
+}
+
+.maingridlayout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  text-align: center;
+  grid-column-gap: 10px;
+  grid-row-gap: 1em;
+}
+
+/* --------------------------- Acccesoires-----------------TARIK----------------------------------*/
+
+/*-----------------------------Fietsen----------------------AB --------------------------------------*/
+
+/*---------------------------- Klanten---------------------FILI------------------------------*/
+
+/*-----------------------------Medewerkers-----------------RENEE----------------------------------*/
+
+/* FOOTER --------------------------------------------------- */
+
+footer .footer {
+  display: grid;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background: #46ad65;
+  height: 400px;
+  max-height: 100%;
+  margin: 5px;
+}
+
+footer .footer-section-icons {
+  display: flexbox;
+  text-align: center;
+  margin-top: -100px;
+}
+
+footer .footer-section-icons i {
+  padding: 10px 30px 10px 30px;
+  padding-top: 85px;
+}
+
+footer .footer-bottom {
+  text-align: left;
+  font-weight: 700;
+}
+
+footer .footer-section-links a:link {
+  text-decoration: none;
+}
+
+footer .footermenu {
+  text-align: center;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.footermenu {
+  text-align: center;
+}
+
+footer,
+img {
+  text-align: center;
+}
+
+/* experimenteel footeropties ----------------- */
+
+/*-----------------------------------Responsive---------------renee--------------------------------------------- */
+@supports (grid-area: auto) {
+  @media screen and (max-width: 50em) {
+    li a,
+    footer .footermenu {
+      font-size: 12px;
+      font-weight: 550;
+    }
+  }
+
+  @media screen and (min-width: 50em) {
+    .index {
+      max-width: none;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .index-intro {
+      grid-column: 1/5;
+    }
+  }
+}
+
+/*-----------------------------------Responsive-----------Ab------------------------------------------------- */
+
+@media screen and (max-width: 992px) {
+  .grid-container {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .grid-item {
+    font-size: 13px;
+  }
+}

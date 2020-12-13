@@ -1,0 +1,52 @@
+{
+  "fietsen": [
+    {
+      "Type": "elektrische",
+      "Nieuwprijs": "2300",
+      "Dagprijs": "60",
+      "Borgprijs": "250",
+      "Merk": "SpeedX",
+      "Typefiets": "4395823"
+    },
+    {
+      "Type": "dames",
+      "Nieuwprijs": "350",
+      "Dagprijs": "25",
+      "Borgprijs": "100",
+      "Merk": "Koga",
+      "Typefiets": "4395826"
+    },
+    {
+      "Type": "heren",
+      "Nieuwprijs": "300",
+      "Dagprijs": "30",
+      "Borgprijs": "100",
+      "Merk": "Batavus",
+      "Typefiets": "4395824"
+    },
+    {
+      "Type": "elektrische",
+      "Nieuwprijs": "3500",
+      "Dagprijs": "90",
+      "Borgprijs": "500",
+      "Merk": "Speedtripple X",
+      "Typefiets": "4395821"
+    },
+    {
+      "Type": "dames",
+      "Nieuwprijs": "360",
+      "Dagprijs": "25",
+      "Borgprijs": "50",
+      "Merk": "Batavus",
+      "Typefiets": "439582"
+    },
+    {
+      "Type": "kinder",
+      "Nieuwprijs": "175",
+      "Dagprijs": "15",
+      "Borgprijs": "50",
+      "Merk": "Batavus",
+      "Typefiets": "4395823"
+    }
+  ]
+}
