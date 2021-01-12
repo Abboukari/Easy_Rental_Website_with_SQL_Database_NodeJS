@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welkom op de verhuurpagina van biker haaglanden" />
+    <title>Biker Homepagina <%= pageTitle %></title>
+    <link rel="shortcut icon" href="images/Logo Biker haaglanden.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vqt1jaf.css" />
+  </head>
+  <body>
+    <header>
+     <%- include('./partials/navigation') %> 
+      <section class="logo12">
+        <a href="/" target="_blank"
+          ><img src="./images/Biker.com main background .png" alt="logo van biker haaglanden" width="1300" height="300"
+        /></a>
+      </section>
+    </header>
+    <%- include(`../pages/${template}`) %> 
+    <footer>
+    <%- include('./partials/footer') %>
+    </footer>
+  </body>
+</html>

@@ -9,6 +9,7 @@ const MedewerkerService = require('./services/MedewerkerService');
 const fietsendisplay = new Fietsendisplay('./data/fietsdata.json');
 const medewerkerService = new MedewerkerService('./data/medewerkers.json');
 
+
 const routes = require('./routes');
 
 // const { Session } = require('inspector');
@@ -27,7 +28,6 @@ app.use(
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './views'));
-// Is nodig bij elk project
 app.use(express.static(path.join(__dirname, './static')));
 
 app.use(

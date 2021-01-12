@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--Gemaakt door Renee Clerx-->
+<html lang="nl" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--om de website passend (responsive) voor kleine schermen-->
+    <meta name="description" content="Welkom op de verhuurpagina van biker haaglanden" />
+    <link rel="stylesheet" href="https://use.typekit.net/vqt1jaf.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./Javascript/Medewerker.js" defer></script>
+    <title>Fietsen</title>
+  </head>
+
+  <body>
+    <header>
+      <%- include('./partials/navigation') %> 
+    </header>
+    <section class="logo12">
+      <a href="./index.html" target="_blank"
+        ><img
+          src="./images/Biker.com main background .png"
+          alt="logo van biker haaglanden"
+          width="1300"
+          height="400"
+      /></a>
+    </section>
+    <%- include(`../pages/${template}`) %> 
+    <footer>
+      <%- include('./partials/footer') %>
+    </footer>
+  </body>
+</html>
