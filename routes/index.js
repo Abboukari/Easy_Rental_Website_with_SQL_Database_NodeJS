@@ -8,13 +8,17 @@ const medewerkerRoute = require('./medewerker');
 const router = express.Router();
 
 module.exports = (params) => {
-  router.get('/', (request, response) => {
-    if (!request.session.visitcount) {
-      request.session.visitcount = 0;
+  router.get('/', (request, response, next) => {
+    try {
+      if (!request.session.visitcount) {
+        request.session.visitcount = 0;
+      }
+      request.session.visitcount += 1;
+      console.log(`Aantal bezoeken van 1 speciefieke user: ${request.session.visitcount}`);
+      return response.render('layout', { pageTitle: 'Welkom', template: 'index' });
+    } catch(err) {
+      return next(err);
     }
-    request.session.visitcount += 1;
-    console.log(`Aantal bezoeken van 1 speciefieke user: ${request.session.visitcount}`);
-    response.render('layout', { pageTitle: 'Welkom', template: 'index' });
   });
 
   router.use('/fiets', fietsRoute(params));
