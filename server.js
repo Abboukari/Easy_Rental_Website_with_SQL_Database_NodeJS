@@ -13,10 +13,6 @@ const medewerkerService = new MedewerkerService('./data/medewerkers.json');
 const klantdisplay = new Klantdisplay('./data/klant.json');
 
 const routes = require('./routes');
-const { request } = require('http');
-const { response } = require('express');
-// const { request, response } = require('express');
-// const { Session } = require('inspector');
 
 const app = express();
 const port = 3000;
