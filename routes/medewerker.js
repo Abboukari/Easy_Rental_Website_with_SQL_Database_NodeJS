@@ -6,8 +6,8 @@ module.exports = (params) => {
   const { medewerkerService } = params;
 
   router.get('/', async (request, response) => {
-    const medewerkers = await medewerkerService.getList();
-    return response.json(medewerkers);
+    const medewerker = await medewerkerService.getList();
+    response.render('layout', { pageTitle: 'Welkom', template: 'medewerker', medewerker });
   });
 
   return router;

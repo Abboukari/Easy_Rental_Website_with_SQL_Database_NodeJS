@@ -3,7 +3,7 @@ const express = require('express');
 
 const fietsRoute = require('./fiets');
 const klantenRoute = require('./klant');
-const medewerkerRoute = require('./medewerkerdata');
+const medewerkerRoute = require('./medewerker');
 
 const router = express.Router();
 
@@ -19,7 +19,7 @@ module.exports = (params) => {
 
   router.use('/fiets', fietsRoute(params));
   router.use('/klant', klantenRoute(params));
-  router.use('/medewerkerdata', medewerkerRoute(params));
+  router.use('/medewerker', medewerkerRoute(params));
 
   return router;
 };
