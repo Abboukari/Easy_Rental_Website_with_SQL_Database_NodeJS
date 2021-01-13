@@ -15,7 +15,7 @@ module.exports = (params) => {
     }
     request.session.visitcount += 1;
     console.log(`Aantal bezoeken van 1 speciefieke user: ${request.session.visitcount}`);
-    response.render('pages/index', { pageTitle: 'Welkom' });
+    response.render('layout', { pageTitle: 'Welkom', template: 'index' });
   });
 
   router.use('/fietsdata', fietsRoute(params));
