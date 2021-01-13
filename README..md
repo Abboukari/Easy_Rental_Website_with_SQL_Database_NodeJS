@@ -35,3 +35,6 @@ npm install cookie-session
 npm install ejs
 
 Nu loopt alles als het goed is op rolletjes
+
+2-1-2021
+npm install mssql
