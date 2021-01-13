@@ -36,6 +36,7 @@ app.use(
     fietsendisplay,
     medewerkerService,
     klantdisplay,
+    
   })
 );
 
