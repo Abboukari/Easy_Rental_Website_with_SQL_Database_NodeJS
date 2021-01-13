@@ -5,6 +5,7 @@
   </section>
 
   <section class="med-tafel">
+    <% if (data.length) { %>}
     <table>
       <thead>
         <tr>
@@ -14,31 +15,34 @@
       </thead>
 
       <tbody>
+        <% for ( var i = 0; i< data.length; i++) { %>}
         <tr>
           <th scope="row">Voornaam</th>
-          <td class="med-data" colspan="2">medewerker.voornaam[i]</td>
+          <td class="med-data" colspan="2" <%="data[i].voornaam%"></td>
         </tr>
         <tr>
           <th scope="row">Achternaam</th>
-          <td class="med-data" colspan="2">medewerker.achternaamnaam[i]</td>
+          <td class="med-data" colspan="2"><%= data[i].achternaam%></td>
         </tr>
         <tr>
           <th scope="row">Geboortedatum</th>
-          <td class="med-data" colspan="2">medewerker.geboortedatum[i]</td>
+          <td class="med-data" colspan="2"><%= data[i].geboortedatum%></td>
         </tr>
         <tr>
           <th scope="row">Functie</th>
-          <td class="med-data">medewerker.functie[i]</td>
+          <td class="med-data"><%= data[i].Rol_naam%></td>
         </tr>
         <tr>
           <th scope="row">Login naam</th>
-          <td class="med-data" colspan="2">medewerker.login_naam[i]</td>
+          <td class="med-data" colspan="2"><%= data[i].login_naam%></td>
         </tr>
         <tr>
           <th scope="row">Paswoord</th>
-          <td class="med-data" colspan="2">medewerker.paswoord[i]</td>
+          <td class="med-data" colspan="2"><%= data[i].paswoord%></td>
         </tr>
+        <% } %>
       </tbody>
     </table>
+    <% } %>
   </section>
 </main>
