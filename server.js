@@ -5,10 +5,11 @@ const cookieSession = require('cookie-session');
 
 const Fietsendisplay = require('./services/fietsendisplay');
 const MedewerkerService = require('./services/MedewerkerService');
+const Klantdisplay = require('./services/klantdisplay')
 
 const fietsendisplay = new Fietsendisplay('./data/fietsdata.json');
 const medewerkerService = new MedewerkerService('./data/medewerkers.json');
-
+const klantdisplay = new Klantdisplay('./data/klant.json');
 
 const routes = require('./routes');
 
@@ -35,6 +36,7 @@ app.use(
   routes({
     fietsendisplay,
     medewerkerService,
+    klantdisplay,
   })
 );
 
