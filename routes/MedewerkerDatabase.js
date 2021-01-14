@@ -34,7 +34,7 @@ module.exports = (params) => {
                 }
 
                 rows = JSON.parse(newResults);
-                res.render("fietsm/index.ejs", {pageTitle: "SQL Data", data: "rows"});
+                res.render("medewerkerDatabase/index.ejs", {pageTitle: "SQL Data", data: "rows"});
             }
         )
     })
