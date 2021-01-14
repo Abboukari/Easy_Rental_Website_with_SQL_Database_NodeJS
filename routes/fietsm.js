@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const sql = require("mssql");
-const config = require("../library/dbfiets");
+const dbConfig = require("../library/dbfiets");
 const request = new sql.Request(); 
 
 module.exports = (params) => {

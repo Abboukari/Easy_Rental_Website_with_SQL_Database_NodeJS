@@ -8,7 +8,7 @@ const dbConfig = {
 }
 
 const connection = sql.connect(
-    "mssql://sa:sa@LAPTOP-P4K60JEISQLEXPRESS/FietsFantastisch"
+    "mssql://sa:sa@localhost/FietsFantastisch"
 ); 
 
 console.log("Connectie is gemaakt");
