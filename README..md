@@ -38,3 +38,6 @@ Nu loopt alles als het goed is op rolletjes
 
 2-1-2021
 npm install mssql
+
+14-1-2021
+de index.js in Routes ook een pad toevoegen bij het maken van een nieuwe route
