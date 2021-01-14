@@ -33,7 +33,7 @@ const sql = require('mssql');
   getEmp(); */
   
 const connectieReneeDB = sql.connect(
-    "mssql://localhost/medewerkerdb", function (err),{
+    "mssql://localhost/medewerkerd", function (err),{
         if (err) console.log(err);
     }
 );

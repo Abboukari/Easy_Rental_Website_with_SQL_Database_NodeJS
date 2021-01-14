@@ -4,6 +4,7 @@ const express = require('express');
 const fietsRoute = require('./fiets');
 const klantenRoute = require('./klant');
 const medewerkerRoute = require('./medewerker');
+const medDbRoute = require('./MedewerkerDatabase');
 
 const router = express.Router();
 
@@ -16,7 +17,7 @@ module.exports = (params) => {
       request.session.visitcount += 1;
       console.log(`Aantal bezoeken van 1 speciefieke user: ${request.session.visitcount}`);
       return response.render('layout', { pageTitle: 'Welkom', template: 'index' });
-    } catch(err) {
+    } catch (err) {
       return next(err);
     }
   });
@@ -24,6 +25,7 @@ module.exports = (params) => {
   router.use('/fiets', fietsRoute(params));
   router.use('/klant', klantenRoute(params));
   router.use('/medewerker', medewerkerRoute(params));
+  router.use('/medewerkerdatabase', medDbRoute(params));
 
   return router;
 };
