@@ -11,6 +11,6 @@ const connection = sql.connect(
     "mssql://sa:sa@localhost/FietsFantastisch"
 ); 
 
-console.log("Connectie is gemaakt");
+console.log("Connectie met database is gemaakt");
 
 module.exports = connection;
