@@ -7,20 +7,19 @@ const request = new sql.Request();
 
 module.exports = (params) => {
 
-    router.get("/", function (req, res, next) {
-        request.query(
-            "SELECT * FROM fiets ORDER BY modelfiets DESC FOR JSON AUTO",
-            function (err, rows) {
-                if (err) {
-                    req.flash("error",err);
-                    res.render("fietsm/index.ejs", {pageTitle: "SQL Data", data: ""});
+    router.get("/", function (req, res, next){
+        request.query("SELECT * FROM fiets FOR JSON AUTO", 
+        function (err, rows) {
+            if (err) {
+                req.flash("error", err);
+                res.render("fietsm/index.ejs", {pageTitle:"MSSQL DATA", data: ""});
             } else {
                 let newResults = [];
-                for(let key in rows) {
-                    if (key === "recordsets"){
+                for (let key in rows) {
+                    if (key === "recordsets") {
                         rows[key].forEach((arr) => {
                             arr.forEach((obj) => {
-                                Object.keys(obj).forEach((key) =>{
+                                Object.keys(obj).forEach((key) => {
                                     newResults.push(obj[key]);
                                 });
                             });
@@ -29,9 +28,12 @@ module.exports = (params) => {
                 }
 
                 rows = JSON.parse(newResults);
-                res.render("fietsm/index.ejs", {pageTitle: "SQL Data", data: "rows"});
+                res.render("fietsm/index.ejs", {pageTitle:"MSSQL DATA", data: rows});
+
             }
-        )
-    })
-    }
-};
+        });
+    
+    });
+ return router
+}
+

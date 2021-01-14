@@ -4,7 +4,7 @@ const express = require('express');
 const fietsRoute = require('./fiets');
 const klantenRoute = require('./klant');
 const medewerkerRoute = require('./medewerker');
-const medDbRoute = require('./MedewerkerDatabase');
+const fietsdataRoute = require('./fietsm')
 
 const router = express.Router();
 
@@ -25,7 +25,6 @@ module.exports = (params) => {
   router.use('/fiets', fietsRoute(params));
   router.use('/klant', klantenRoute(params));
   router.use('/medewerker', medewerkerRoute(params));
-  router.use('/medewerkerdatabase', medDbRoute(params));
-
+  router.use('/fietsm', fietsdataRoute(params))
   return router;
 };

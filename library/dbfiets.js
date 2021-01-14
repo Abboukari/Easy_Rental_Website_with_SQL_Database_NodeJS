@@ -12,3 +12,5 @@ const connection = sql.connect(
 ); 
 
 console.log("Connectie is gemaakt");
+
+module.exports = connection;
