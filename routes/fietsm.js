@@ -11,7 +11,7 @@ module.exports = (params) => {
         request.query("SELECT * FROM fiets FOR JSON AUTO", 
         function (err, rows) {
             if (err) {
-                req.flash("error", err);
+                // req.flash("error", err);
                 res.render("fietsm/index.ejs", {pageTitle:"MSSQL DATA", data: ""});
             } else {
                 let newResults = [];

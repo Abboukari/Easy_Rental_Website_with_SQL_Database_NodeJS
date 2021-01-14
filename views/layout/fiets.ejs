@@ -28,35 +28,7 @@
     </section>
     <%- include(`../pages/${template}`) %> 
     <!-- krijg de tabel hieronder niet zicht baar?  Als ik hem in de pages file stop dan krijg een 404 error-->
-    <% if (fiets.length) { %> 
-      <table  class="med-tafel">
-        <thead>
-          <tr>
-            <th scope="col">framenummer</th>
-            <th scope="col">Type fiets</th>
-            <th scope="col">Model fiets</th>
-            <th scope="col">Dagprijs</th>
-            <th scope="col">Nieuwprijs</th>
-            <th scope="col">Merk</th>
-          </tr>
-        </thead>
-          <tbody>
-            <% for(var i = 0; i < data.length; i++) { %>
-              <tr>
-                <th scope="row"><%= (i+1) %></th>
-                <td><%= data.[i].framenummer %></td>
-                <td><%= data.[i].type_fiets %></td>
-                <td><%= data.[i].modelfiets %></td>
-                <td><%= data.[i].dagprijs %></td>
-                <td><%= data.[i].borg %></td>
-                <td><%= data.[i].nieuwprijs %></td>
-                <td><%= data.[i].merkfiets %></td>
-              </tr>
-           <% } %>
-          </tbody>
-      </table>
-      <% }  %> 
-
+   
     <footer>
       <%- include('./partials/footer') %>
     </footer>
