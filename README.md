@@ -1,43 +1,24 @@
-Maak een map .gitignore aan en zet daar de volgende bestanden en files in
-node_modules
-.eslintrc.json
-package-lock.json
-package.json
-prettierrc
-.gitignore
+# Biker opdracht
 
-in je Terminal:
-node -v (om te checken of je node op je systeem hebt staan, zo niet installeer die dan eerst)
+### Prerequisites
 
-npm init (https://www.linkedin.com/learning/learning-npm-the-node-package-manager-3/initializing-a-package-json-file?u=2167265)
+Om het project te kunnen starten is [NodeJS](https://nodejs.org/en/) vereist.
 
-npm install express
+## Setup
+Clone het project, en navigeer via de terminal naar het map.\
+Voer de volgende command uit:
 
-npm install -eslint (optioneel)
-npx eslint --init (ik heb de volgende opties gekozen
-To check syntax and find problems, and enforce code style
-CommonJS (require/exports
-NOne of these
-no
-node
-Use a popular style guide
-AirBnB
-json
-yes
-)
+```shell
+cp .env.dist .env # Op Unix (Linux/Mac)
+copy .env.dist .env # Op DOS (Windows)
+```
 
-npm install -D prettier eslint-config-prettier eslint-plugin-prettier (optioneel maar zeer aan te raden) (pas hierna ook je package.json file aan en maar een file .prettierrc)
+Vul vervolgens de desbetreffende variabelen in met bijbehorende data.
 
-npm install -D nodemon
-(hierna vervolgens ook weer je pakage.json file aanpassen)
+Voer vervolgens de volgende command uit:
 
-npm install cookie-session
-npm install ejs
+```shell
+npm install && npm run dev
+```
 
-Nu loopt alles als het goed is op rolletjes
-
-2-1-2021
-npm install mssql
-
-14-1-2021
-de index.js in Routes ook een pad toevoegen bij het maken van een nieuwe route
+De applicatie is beschikbaar op http://localhost:3000
