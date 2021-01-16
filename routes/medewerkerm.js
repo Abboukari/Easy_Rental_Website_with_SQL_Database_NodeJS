@@ -8,11 +8,11 @@ const request = new sql.Request();
 module.exports = (params) => {
 
     router.get("/", function (req, res, next){
-        request.query("SELECT * FROM fiets FOR JSON AUTO", 
+        request.query("SELECT * FROM Medewerker FOR JSON AUTO", 
         function (err, rows) {
             if (err) {
                 // req.flash("error", err);
-                res.render("fietsm/fietsdatabase.ejs", {pageTitle:"MSSQL DATA", data: ""});
+                res.render("medewerkerm/medewerkerdatabase.ejs", {pageTitle:"MSSQL DATA", data: ""});
             } else {
                 let newResults = [];
                 for (let key in rows) {
@@ -28,7 +28,7 @@ module.exports = (params) => {
                 }
 
                 rows = JSON.parse(newResults);
-                res.render("fietsm/fietsdatabase.ejs", {pageTitle:"MSSQL DATA", data: rows});
+                res.render("medewerkerm/medewerkerdatabase.ejs", {pageTitle:"MSSQL DATA", data: rows});
 
             }
         });

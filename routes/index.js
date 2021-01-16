@@ -1,10 +1,12 @@
 /* eslint-disable no-console */
 const express = require('express');
 
-const fietsRoute = require('./fiets');
-const klantenRoute = require('./klant');
-const medewerkerRoute = require('./medewerker');
+// const fietsRoute = require('./fiets');
+// const medewerkerRoute = require('./medewerker');
+// const klantenRoute = require('./klant');
 const fietsdataRoute = require('./fietsm')
+const klantdataRoute = require('./klantm');
+const medewerkerdataRoute = require('./medewerkerm');
 
 const router = express.Router();
 
@@ -22,9 +24,11 @@ module.exports = (params) => {
     }
   });
 
-  router.use('/fiets', fietsRoute(params));
-  router.use('/klant', klantenRoute(params));
-  router.use('/medewerker', medewerkerRoute(params));
-  router.use('/fietsm', fietsdataRoute(params))
+  // router.use('/medewerker', medewerkerRoute(params));
+  // router.use('/fiets', fietsRoute(params));
+  // router.use('/klant', klantenRoute(params));
+  router.use('/medewerkerm', medewerkerdataRoute(params));
+  router.use('/fietsm', fietsdataRoute(params));
+  router.use('/klantm', klantdataRoute(params));
   return router;
 };

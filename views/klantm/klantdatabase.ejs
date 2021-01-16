@@ -1,4 +1,4 @@
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Welkom op de verhuurpagina van biker haaglanden" />
@@ -15,14 +15,11 @@
         <nav>
           <ul>
             <li>
-              <a href="/" class="active" target="_blank">Homepagina</a>
+              <a href="/">Homepagina</a>
             </li>
-            <li style="float: right"><a href="/fiets">Fiets</a></li>
-            <li style="float: right"><a href="/klant">Klant</a></li>
-            <li style="float: right"><a href="/fietsm">fietsm</a></li>
-            <li style="float: right">
-              <a href="/medewerker">Medewerker</a>
-            </li>
+            <li style="float: right"><a href="/fietsm">Database Fietsen</a></li>
+            <li style="float: right"><a href="/medewerkerm">Database Medewerkers</a></li>
+            <li style="float: right"><a href="/klantm" class="active">Database Klanten</a></li>
           </ul>
         </nav>
     </section>
@@ -32,9 +29,8 @@
         /></a>
       </section>
     </header>
-<main>
-  <section>
-    <h1>BIKER HAAGLANDEN</h1>
+  <main>
+    <h1 style="text-align: center;">Klantgegevens vanuit de database van Biker</h1>
     <p>
       Biker Haaglanden staat bekend in de regio als een fietsverhuurbedrijf dat daarnaast de
       courante modellen uit de voorraad verhuurt aan de toeristen in de regio. Steeds meer
@@ -42,45 +38,38 @@
       reis te boeken. Biker biedt de klant de mogelijkheid om een fiets te reserveren.
     </p>
     <p>
-      Naast de website is er ook veel te beleven in de winkels. Daar komen klanten altijd
-      naartoe om hun fietsen te halen of in te leveren.Aan de balie is ook informatie krijgen.
-      De baliemedewerkers zorgen ervoor dat klanten antwoord krijgen op hun vragen, en ze
-      verzorgen ook de verkoop/ verhuur. De reparateurs richten zich op de kwaliteit van de
-      fietsen en beheren de voorraad.
+        Hieronder tonen wij de bepaalde gegevens van fictieve klanten
     </p>
-  </section>   
-<% if (data.length) { %> 
-  <table  class="med-tafel">
-    <thead>
-      <tr>
-        <th scope="col">framenummer</th>
-        <th scope="col">Type fiets</th>
-        <th scope="col">Model fiets</th>
-        <th scope="col">Dagprijs</th>
-        <th scope="col">Nieuwprijs</th>
-        <th scope="col">Merk</th>
-      </tr>
-    </thead>
-      <tbody>
-        <% for(var i = 0; i < data.length; i++) { %>
-          <tr>
-            <th scope="row"><%= (i+1) %></th>
-            <td><%= dataa[i].framenummer %></td>
-            <td><%= data[i].type_fiets %></td>
-            <td><%= data[i].modelfiets %></td>
-            <td><%= data[i].dagprijs %></td>
-            <td><%= data[i].borg %></td>
-            <td><%= data[i].nieuwprijs %></td>
-            <td><%= data[i].merkfiets %></td>
-          </tr>
-       <% } %>
-      </tbody>
-  </table>
-  <% }  %> 
-  </section>
+  </main>
+  <% if (data.length) { %> 
+    <table  class="med-tafel">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Voornaam</th>
+          <th scope="col">Achternaam</th>
+          <th scope="col">Adres</th>
+          <th scope="col">Postcode</th>
+          <th scope="col">Land</th>
+        </tr>
+      </thead>
+        <tbody>
+          <% for(var i = 0; i < data.length; i++) { %>
+            <tr>
+              <th scope="row"><%= (i+1) %></th>
+              <td><%= data[i].voornaam %></td>
+              <td><%= data[i].achternaam %></td>
+              <td><%= data[i].adres %></td>
+              <td><%= data[i].postcode %></td>
+              <td><%= data[i].land %></td>
+            </tr>
+        <% } %>
+        </tbody>
+    </table>
+    <% }  %> 
+    <br>
+    <br>
 </main>
-
-
     <footer>
       <section class="footer">
         <nav>
