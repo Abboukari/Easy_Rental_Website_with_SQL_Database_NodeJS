@@ -15,59 +15,57 @@
       <nav>
         <ul>
           <li>
-            <a href="/"  target="_blank">Homepagina</a>
+            <a href="/" target="_blank">Homepagina</a>
           </li>
           <li style="float: right"><a href="/fietsm">Database Fietsen</a></li>
           <li style="float: right"><a href="/medewerkerm" class="active">Database Medewerkers</a></li>
           <li style="float: right"><a href="/klantm">Database Klanten</a></li>
         </ul>
       </nav>
-  </section>
+    </section>
     <section class="logo12">
-      <a href="/" target="_blank"
-        ><img src="./images/Biker.com main background .png" alt="logo van biker haaglanden" width="1300" height="300"
-      /></a>
+      <a href="/" target="_blank"><img src="./images/Biker.com main background .png" alt="logo van biker haaglanden" width="1300" height="300" /></a>
     </section>
   </header>
-<main>
-  <h1 style="text-align: center;">Medewerkersgegevens vanuit de database van Biker</h1>
-  <p>
-    Biker Haaglanden staat bekend in de regio als een fietsverhuurbedrijf dat daarnaast de
-    courante modellen uit de voorraad verhuurt aan de toeristen in de regio. Steeds meer
-    mensen nemen contact op met Biker om fietsen te huren en ook voor de mogelijkheid om een
-    reis te boeken. Biker biedt de klant de mogelijkheid om een fiets te reserveren.
-  </p>
-  <p>Hieronder tonen wij bepaalde fictieve gegevens vanuit de medewerker database</p>
-</main>
+  <main>
+    <h1 style="text-align: center">Medewerkersgegevens vanuit de database van Biker</h1>
+    <p>
+      Biker Haaglanden staat bekend in de regio als een fietsverhuurbedrijf dat daarnaast de courante modellen uit de voorraad verhuurt aan de
+      toeristen in de regio. Steeds meer mensen nemen contact op met Biker om fietsen te huren en ook voor de mogelijkheid om een reis te boeken.
+      Biker biedt de klant de mogelijkheid om een fiets te reserveren.
+    </p>
+    <p>Hieronder tonen wij bepaalde fictieve gegevens vanuit de medewerker database</p>
+  </main>
 
-<section>
-  <% if (data.length) { %> 
-  <table  class="med-tafel">
-    <thead>
-      <tr>
-        <th scope="col"></th>
-        <th scope="col">Voornaam</th>
-        <th scope="col">Achternaam</th>
-        <th scope="col">Login Naam</th>
-        <th scope="col">Geboortedatum</th>
-      </tr>
-    </thead>
+  <section>
+    <% if (data.length) { %>
+    <table class="med-tafel">
+      <thead>
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Voornaam</th>
+          <th scope="col">Achternaam</th>
+          <th scope="col">Login Naam</th>
+          <th scope="col">Geboortedatum</th>
+        </tr>
+      </thead>
       <tbody>
         <% for(var i = 0; i < data.length; i++) { %>
-          <tr>
-            <th scope="row"><%= (i+1) %></th>
-            <td><%= data[i].voornaam %></td>
-            <td><%= data[i].achternaam %></td>
-            <td><%= data[i].login_naam %></td>
-            <td><%= data[i].geboortedatum%></td>
-          </tr>
-      <% } %>
+        <tr>
+          <th scope="row"><%= (i+1) %></th>
+          <td><%= data[i].voornaam %></td>
+          <td><%= data[i].achternaam %></td>
+          <td><%= data[i].login_naam %></td>
+          <td><%= data[i].geboortedatum%></td>
+          <!-- <td><%= data[i].Rol_naam%></td> -->
+        </tr>
+        <% } %>
       </tbody>
-  </table>
-  <% }  %> 
-  <br>
-  <br>
-</section>
+    </table>
+    <% } %>
+    <br />
+    <br />
+  </section>
   <footer>
     <section class="footer">
       <nav>
